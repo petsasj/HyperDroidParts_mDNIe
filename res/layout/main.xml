@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/previewmode_img" />
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:orientation="vertical" android:id="@+id/profileGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose mode:" />
+            <RadioButton android:id="@+id/profile0" android:checked="false" android:text="Default" />
+            <RadioButton android:id="@+id/profile1" android:checked="false" android:text="Video" />
+            <RadioButton android:id="@+id/profile2" android:checked="false" android:text="Warm" />
+            <RadioButton android:id="@+id/profile3" android:checked="false" android:text="Cold" />
+            <RadioButton android:id="@+id/profile4" android:checked="false" android:text="Camera" />
+            <RadioButton android:id="@+id/profile5" android:checked="false" android:text="Navi" />
+            <RadioButton android:id="@+id/profile6" android:checked="false" android:text="Gallery" />
+        </RadioGroup>
+        <RadioGroup android:orientation="vertical" android:id="@+id/configGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Choose base profile:" />
+            <RadioButton android:id="@+id/config0" android:checked="false" android:text="Dynamic" />
+            <RadioButton android:id="@+id/config1" android:checked="false" android:text="Standard" />
+            <RadioButton android:id="@+id/config2" android:checked="false" android:text="Movie" />
+            <RadioButton android:id="@+id/config3" android:checked="false" android:text="Petsasj" />
+            <RadioButton android:id="@+id/config4" android:checked="false" android:text="Doctorcete" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
